@@ -25,6 +25,12 @@ To calculate a path, simply call `FindPath` with:
 
 The pathfinder handles the required coordinate conversion internally through Unity's Tilemap API.
 
+## ToDo
+
+* Scheduler
+* Path Smoothing
+
+
 ## Video Explanation
 
 Part 1
