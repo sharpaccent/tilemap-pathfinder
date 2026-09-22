@@ -10,9 +10,12 @@ public class PathfinderDebug : MonoBehaviour
 
     public bool requestPath = true;
 
-    List<Vector3> path = new List<Vector3>();
+    public List<Vector3> path = new List<Vector3>();
 
     public Tilemap obstacleLayer;
+
+    public Pathfinder.Request request;
+    public PathfinderScheduler scheduler;
 
     private void Update()
     {
@@ -32,9 +35,15 @@ public class PathfinderDebug : MonoBehaviour
     {
         path.Clear();
 
-        Pathfinder.Result result = GetComponent<Pathfinder>().FindWorldPath(
-           start.position, destination.position, path, obstacleLayer);
+        request.startPosition = start.position;
+        request.targetPosition = destination.position;
+        request.unit = this;
+        scheduler.AddRequest(request);
 
-        Debug.Log(result.Status);
+
+        //Pathfinder.Result result = GetComponent<Pathfinder>().FindWorldPath(
+        //   start.position, destination.position, path, obstacleLayer);
+
+        //Debug.Log(result.Status);
     }
 }

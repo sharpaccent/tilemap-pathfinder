@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 16847799}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.35, y: 4.04, z: 0}
+  m_LocalPosition: {x: -22.9, y: 7.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3632,6 +3632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1024586840}
+  - component: {fileID: 1024586841}
   m_Layer: 0
   m_Name: start
   m_TagString: Untagged
@@ -3648,7 +3649,87 @@ Transform:
   m_GameObject: {fileID: 1024586839}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.19, y: -1.18, z: 0}
+  m_LocalPosition: {x: -5.71441, y: -0.17956, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1024586841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024586839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2cb533bf48ccc64bbdd316b4a9b9927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PathfinderDebug
+  start: {fileID: 1024586840}
+  destination: {fileID: 16847800}
+  requestPath: 1
+  path: []
+  obstacleLayer: {fileID: 74464944}
+  request:
+    startPosition: {x: 0, y: 0, z: 0}
+    targetPosition: {x: 0, y: 0, z: 0}
+    unit: {fileID: 0}
+    maximumExpandedCells: 32000
+    preventCornerCutting: 1
+  scheduler: {fileID: 1849110380}
+--- !u!1 &1765738630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1765738632}
+  - component: {fileID: 1765738631}
+  m_Layer: 0
+  m_Name: start (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1765738631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765738630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2cb533bf48ccc64bbdd316b4a9b9927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PathfinderDebug
+  start: {fileID: 1765738632}
+  destination: {fileID: 16847800}
+  requestPath: 1
+  path: []
+  obstacleLayer: {fileID: 74464944}
+  request:
+    startPosition: {x: 0, y: 0, z: 0}
+    targetPosition: {x: 0, y: 0, z: 0}
+    unit: {fileID: 0}
+    maximumExpandedCells: 32000
+    preventCornerCutting: 1
+  scheduler: {fileID: 1849110380}
+--- !u!4 &1765738632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765738630}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.74, y: -8.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3663,7 +3744,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1849110379}
-  - component: {fileID: 1849110378}
   - component: {fileID: 1849110380}
   m_Layer: 0
   m_Name: Pathfinder
@@ -3672,18 +3752,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1849110378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849110377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 731441484ecec83458f8cde9148c3e41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TilemapPathfinder
 --- !u!4 &1849110379
 Transform:
   m_ObjectHideFlags: 0
@@ -3708,13 +3776,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1849110377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2cb533bf48ccc64bbdd316b4a9b9927, type: 3}
+  m_Script: {fileID: 11500000, guid: bfd22b0e1e93e504486250c8bb4b24f2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PathfinderDebug
-  start: {fileID: 1024586840}
-  destination: {fileID: 16847800}
-  requestPath: 1
+  m_EditorClassIdentifier: Assembly-CSharp::PathfinderScheduler
+  budgetMs: 1
   obstacleLayer: {fileID: 74464944}
+  nodesPerFrame: 5000
+  maximumRequestsStartedPerFrame: 64
 --- !u!1 &1854318961
 GameObject:
   m_ObjectHideFlags: 0
@@ -3761,6 +3829,62 @@ Transform:
   - {fileID: 74464942}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1901343863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1901343865}
+  - component: {fileID: 1901343864}
+  m_Layer: 0
+  m_Name: start (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1901343864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901343863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2cb533bf48ccc64bbdd316b4a9b9927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PathfinderDebug
+  start: {fileID: 1901343865}
+  destination: {fileID: 16847800}
+  requestPath: 1
+  path: []
+  obstacleLayer: {fileID: 74464944}
+  request:
+    startPosition: {x: 0, y: 0, z: 0}
+    targetPosition: {x: 0, y: 0, z: 0}
+    unit: {fileID: 0}
+    maximumExpandedCells: 32000
+    preventCornerCutting: 1
+  scheduler: {fileID: 1849110380}
+--- !u!4 &1901343865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901343863}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37, y: -11.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3770,4 +3894,6 @@ SceneRoots:
   - {fileID: 1849110379}
   - {fileID: 1854318963}
   - {fileID: 1024586840}
+  - {fileID: 1901343865}
+  - {fileID: 1765738632}
   - {fileID: 16847800}
