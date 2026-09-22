@@ -17,7 +17,7 @@ A lightweight pathfinding solution built around Unity's Tilemap system.
 
 Take a look at `PathfinderDebug.cs` for a basic implementation example.
 
-To calculate a path, simply call `FindPath` with:
+To calculate a path, enqueue a request to the pathfinder scheduler
 
 * A start position
 * A destination position
