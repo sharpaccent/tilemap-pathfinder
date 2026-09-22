@@ -27,17 +27,23 @@ The pathfinder handles the required coordinate conversion internally through Uni
 
 ## ToDo
 
-* Scheduler
-* Path Smoothing
+* ~~Scheduler~~
+* ~~Path Smoothing~~
 
 
 ## Video Explanation
 
 Part 1
 https://youtu.be/41h4SIuH8qc
-
 Part 2
 https://youtu.be/a9MIkZAIMiw
+Part 3
+https://youtu.be/KrKVhV96OC0
+Part 4
+https://youtu.be/C1zyyofgONs
+Part 5
+https://youtu.be/FY85eA3pYl0
+
 
 ## Support
 
